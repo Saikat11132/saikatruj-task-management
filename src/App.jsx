@@ -9,6 +9,7 @@ import Tasks from './pages/Tasks'
 import CreateTask from './pages/CreateTask'
 import { getToken } from './common/tokenFunc'
 import EditTask from './pages/EditTask'
+import Home from './pages/Home'
 
 // Protected Route Component
 const IsAuthenticated = ({ children }) => {
@@ -20,13 +21,7 @@ const IsAuthenticated = ({ children }) => {
   return children
 }
 
-// Page components
-const Home = () => (
-  <div>
-    <h1>Smart Task Management</h1>
-    <p>Simple frontend router demo.</p>
-  </div>
-)
+
 
 // Protected routes array
 const protectedRoutes = [

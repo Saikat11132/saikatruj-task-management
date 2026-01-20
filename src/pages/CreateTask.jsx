@@ -69,6 +69,11 @@ const CreateTask = () => {
     // Create task (mock dispatch)
 
     dispatch(createTask(formData))
+    .then((res) => {
+    if (!res.error) {
+      navigate('/tasks');
+    }
+  });
     console.log('Creating task:', formData)
     // dispatch(createTask(formData))
 
